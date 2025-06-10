@@ -14,6 +14,10 @@ export default function Home() {
             <img src="/images/BrandB.jpg" alt="Brand B" />
             <img src="/images/BrandC.jpg" alt="Brand C" />
           </div>
+          <div className="hero-cta">
+            <button className="shop-now-btn">Shop Now</button>
+            <button className="learn-more-btn">Learn More</button>
+          </div>
         </div>
         <img src="/images/glowessence-logo.webp" alt="GlowEssence Logo" className="logo" />
         <video autoPlay muted loop className="full-video">
@@ -33,6 +37,30 @@ export default function Home() {
         <div className="feature-card">
           <h3>Dermatologist-Tested</h3>
           <p>Safe for sensitive skin, tested by experts.</p>
+        </div>
+      </section>
+
+      <section className="product-preview">
+        <h2>Best Sellers</h2>
+        <div className="product-row">
+          <div className="product-card">
+            <img src="/images/serum.jpg" alt="Glow Serum" />
+            <h4>Glow Boost Serum</h4>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src="/images/cleanser.jpg" alt="Foam Cleanser" />
+            <h4>Gentle Foam Cleanser</h4>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src="/images/moisturizer.jpg" alt="Moisturizer" />
+            <h4>Daily Hydrating Moisturizer</h4>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+          </div>
         </div>
       </section>
 
