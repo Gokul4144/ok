@@ -1,4 +1,4 @@
-/* Updated CSS for GlowEssence Skincare Website */
+/* GlowEssence Skincare Website - Full Enhanced CSS */
 
 :root {
   --primary: #82cbb2;
@@ -16,24 +16,40 @@ body {
   line-height: 1.5;
   background: var(--bg-light);
   color: var(--text-base);
+  margin: 0;
+  padding: 0;
 }
 
+/* Headings */
 h1, h2, h3 {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-base);
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
 }
 
+/* HERO SECTION */
 .hero {
-  background: linear-gradient(to bottom, #e0f7ef, var(--primary));
+  background: linear-gradient(135deg, #e0f7ef, var(--primary));
   color: #0c2d23;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 5rem 2rem;
+  border-bottom: 5px solid var(--primary-dark);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .hero-cta {
@@ -45,11 +61,12 @@ h1, h2, h3 {
   font-size: 1.125rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .hero-cta:hover {
   background: var(--primary-dark);
+  transform: scale(1.05);
 }
 
 .hero-logos {
@@ -57,30 +74,37 @@ h1, h2, h3 {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: transform 0.3s, opacity 0.3s;
+}
+
+.hero-logos img {
+  height: 40px;
+  transition: transform 0.3s ease;
 }
 
 .hero-logos img:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
+/* FEATURES SECTION */
 .features-hero {
   background: #f1fef9;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .features-hero h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
   color: var(--text-base);
 }
 
 .feature-blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -89,15 +113,18 @@ h1, h2, h3 {
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
-  flex: 1 1 250px;
+  flex: 1 1 280px;
+  max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .feature-block:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-lift);
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 2rem;
@@ -111,6 +138,7 @@ h1, h2, h3 {
   box-shadow: var(--shadow-lift);
 }
 
+/* TEAM SECTION */
 .team-member {
   background: white;
   padding: 1.5rem;
@@ -119,6 +147,7 @@ h1, h2, h3 {
   box-shadow: var(--shadow-soft);
 }
 
+/* AI INFO BOX */
 .ai-box {
   background: white;
   padding: 2rem;
@@ -127,6 +156,7 @@ h1, h2, h3 {
   margin-top: 2rem;
 }
 
+/* TESTIMONIAL SECTION */
 .testimonial-section {
   background: #f9fdfc;
   padding: 3rem 1rem;
@@ -134,12 +164,14 @@ h1, h2, h3 {
 }
 
 .testimonial {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   font-style: italic;
+  font-size: 1.1rem;
   color: var(--muted);
 }
 
+/* CONTACT FORM */
 .contact-form {
   background: white;
   padding: 2rem;
@@ -166,16 +198,19 @@ h1, h2, h3 {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
   background: var(--primary-dark);
+  transform: scale(1.03);
 }
 
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 1.5rem 0;
   font-size: 0.9rem;
   color: var(--muted);
+  background: #f0fef7;
 }
